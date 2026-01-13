@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 2</title>
+    <style>
+        * {
+            background-color: darkgray;
+        }
+
+        .blog-list {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            border: 1px solid red;
+        }
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        .blog-container section img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="blog-list">
+        <div class="blog-container">
+            <section>
+                <img src="images/A.jpg" alt="">
+            </section>
+            <section>
+                <div class="blog">
+                    <h2>blog title</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati praesentium tempora
+                        perferendis
+                        soluta? Cupiditate facere incidunt necessitatibus similique modi laboriosam ipsa, laborum dolore
+                        inventore, commodi est minima! Magnam, optio tenetur?</p>
+                    <button>read more..</button>
+                </div>
+            </section>
+
+        </div>
+        <div class="blog-container">
+            <section>
+                <img src="images/A.jpg" alt="">
+            </section>
+            <section>
+                <div class="blog">
+                    <h2>blog title</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati praesentium tempora
+                        perferendis
+                        soluta? Cupiditate facere incidunt necessitatibus similique modi laboriosam ipsa, laborum dolore
+                        inventore, commodi est minima! Magnam, optio tenetur?</p>
+                    <button>read more..</button>
+                </div>
+            </section>
+
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
