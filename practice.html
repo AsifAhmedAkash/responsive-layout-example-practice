@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        * {
+            background-color: darkgray;
+        }
+
+        .responsive-flex {
+            display: flex;
+            gap: 20px;
+        }
+
+        .left {
+            width: 20vw;
+            background-color: lightgray;
+        }
+
+        .right {
+            flex: 1;
+            background-color: lightgoldenrodyellow;
+        }
+
+        @media screen and (max-width: 786px) {
+            .responsive-flex {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .left {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive-flex">
+        <section class="left">
+            <p>left</p>
+        </section>
+        <section class="right">
+            <p>right</p>
+        </section>
+    </div>
+</body>
+
+</html>
